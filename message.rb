@@ -10,7 +10,6 @@ def alpha(message) # message is input from test
             val = newarr[index]
             newvar += val # adds value to the variable newvar
         else
-            val = " "
             newvar += val
         end
     end
