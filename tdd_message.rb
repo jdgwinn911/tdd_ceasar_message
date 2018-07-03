@@ -15,6 +15,6 @@ class CeasarsMessage < Minitest::Test
     end
 
     def test_that_letters_are_upcase
-        assert_equal("MJQQT", alpha("hello"))
+        assert_equal("MJQQT", alpha("HELLO"))
     end
 end
