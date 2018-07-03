@@ -16,5 +16,3 @@ def alpha(message) # message is input from test
     end
     newvar
 end
-
-#if ("a" .. "z") != nil 

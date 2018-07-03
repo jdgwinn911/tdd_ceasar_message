@@ -10,4 +10,7 @@ class CeasarsMessage < Minitest::Test
         assert_equal("mjqqt btwqi", alpha("hello world"))
     end
 
+    def test_that_it_can_use_special_characters
+        assert_equal("mjqqt!", alpha("hello!"))
+    end
 end
