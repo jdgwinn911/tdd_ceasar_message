@@ -6,15 +6,15 @@ def alpha(message) # message is input from test
     var.each_with_index do |val, index| # takes the message (input from test) that was split into an array and runs through it's index
         if ("a".."z").include? (val.downcase)
             index = newarr.index(val) # 
-            1.times{val = newarr[index + 5]} # looks through 1 time and jumps 5 places in index 
-            newvar += val # adds value to the variable newvar 
-
-        # elsif ("a".."z").include? (i.uppercase)
-        #     5.times{i = i.next}
-        #     message += i[-1]
-        #     return message
-         end
+            newarr.rotate!(5)
+            val = newarr[index]
+            newvar += val # adds value to the variable newvar
+        else
+            val = " "
+            newvar += val
+        end
     end
     newvar
 end
 
+#if ("a" .. "z") != nil 

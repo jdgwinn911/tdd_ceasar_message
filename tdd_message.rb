@@ -6,8 +6,8 @@ class CeasarsMessage < Minitest::Test
         assert_equal("mjqqt", alpha("hello"))
     end
 
-    # def test_that_stuff_returns_right
-    #     assert_equal("mjqqt btwqi", alpha("hello world"))
-    # end
+    def test_that_stuff_returns_right
+        assert_equal("mjqqt btwqi", alpha("hello world"))
+    end
 
 end
