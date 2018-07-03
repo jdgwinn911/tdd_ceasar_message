@@ -9,7 +9,12 @@ def alpha(message) # message is input from test
             newarr.rotate!(5)
             val = newarr[index]
             newvar += val # adds value to the variable newvar
-        else
+        elsif ("A".."Z").include? (val.upcase)
+            index = newarr.index(val) 
+            newarr.rotate!(5)
+            val = newarr[index]
+            newvar += val 
+        else 
             newvar += val
         end
     end

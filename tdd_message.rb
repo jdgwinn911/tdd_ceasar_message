@@ -13,4 +13,8 @@ class CeasarsMessage < Minitest::Test
     def test_that_it_can_use_special_characters
         assert_equal("mjqqt!", alpha("hello!"))
     end
+
+    def test_that_letters_are_upcase
+        assert_equal("MJQQT", alpha("hello"))
+    end
 end
