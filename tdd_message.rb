@@ -17,4 +17,8 @@ class CeasarsMessage < Minitest::Test
     def test_that_letters_are_upcase
         assert_equal("MJQQT", alpha("HELLO"))
     end
+
+    def test_that_upcase_spaces_and_special_chars_are_incorperated
+        assert_equal("MJqQt BTwQi!", alpha("HElLo WOrLd!"))
+    end
 end
