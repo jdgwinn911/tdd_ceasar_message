@@ -2,6 +2,7 @@ require "minitest/autorun"
 require_relative "message.rb"
 
 class CeasarsMessage < Minitest::Test
+
     def test_that_return_string
         assert_equal("mjqqt", alpha("hello"))
     end
@@ -19,8 +20,11 @@ class CeasarsMessage < Minitest::Test
     end
 
     def test_that_upcase_spaces_and_special_chars_are_incorperated
-        assert_equal("MJqQt BTwQi42!", alpha("HElLo WOrLd42!"))
+        assert_equal("mjqqt btwqi42", alpha("hello world42"))
+        assert_equal("MjQqT BtWqi42", alpha("HeLlO WoRld42"))
+        assert_equal("MjQqt ! BtWqi", alpha("HeLlO ! WoRld"))
     end
+
     def test_2that_upcase_spaces_and_special_chars_are_incorperated
         assert_equal("HElLo WOrLd42!", alpha2("MJqQt BTwQi42!"))
     end
