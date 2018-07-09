@@ -32,6 +32,6 @@ class CeasarsMessage < Minitest::Test
         assert_equal("CzGgJ RjMgy42", alpha2("HeLlO WoRld42"))
         assert_equal("CzGgj ! RjMgy", alpha2("HeLlo ! WoRld"))
         assert_equal("CZGGJ * rjmgy", alpha2("HELLO * world"))
-        assert_equal("MjQqt17 !! BtWqi42", alpha2("HeLlo17 !! WoRld42"))
+        assert_equal("CzGgj17 !! RjMgy42", alpha2("HeLlo17 !! WoRld42"))
     end
 end
