@@ -21,4 +21,7 @@ class CeasarsMessage < Minitest::Test
     def test_that_upcase_spaces_and_special_chars_are_incorperated
         assert_equal("MJqQt BTwQi42!", alpha("HElLo WOrLd42!"))
     end
+    def test_2that_upcase_spaces_and_special_chars_are_incorperated
+        assert_equal("HElLo WOrLd42!", alpha2("MJqQt BTwQi42!"))
+    end
 end
